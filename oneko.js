@@ -96,7 +96,7 @@
     nekoEl.style.left = `${nekoPosX - spriteSize / 2}px`;
 	nekoEl.style.top = `${nekoPosY - spriteSize / 2}px`;
     nekoEl.style.zIndex = 2147483647;
-	nekoEl.style.transform = "scale(0.5)"; 
+	nekoEl.style.transform = "scale(0.4)"; 
 	
     let nekoFile = "./oneko.gif"
     const curScript = document.currentScript
