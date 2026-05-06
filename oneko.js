@@ -88,15 +88,16 @@
   function init() {
     nekoEl.id = "oneko";
     nekoEl.ariaHidden = true;
-    nekoEl.style.width = `32px`;
-	nekoEl.style.height = `32px`;
+    nekoEl.style.width = `${spriteSize}px`;
+	nekoEl.style.height = `${spriteSize}px`;
     nekoEl.style.position = "fixed";
     nekoEl.style.pointerEvents = "none";
     nekoEl.style.imageRendering = "pixelated";
     nekoEl.style.left = `${nekoPosX - spriteSize / 2}px`;
 	nekoEl.style.top = `${nekoPosY - spriteSize / 2}px`;
     nekoEl.style.zIndex = 2147483647;
-
+	nekoEl.style.transform = "scale(0.2)"; 
+	
     let nekoFile = "./oneko.gif"
     const curScript = document.currentScript
     if (curScript && curScript.dataset.cat) {
